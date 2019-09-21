@@ -46,6 +46,10 @@ section {
   display: block;
 }
 
+main {
+  margin-top: 100px;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -95,6 +99,7 @@ a:hover {
   outline-width: 0;
 }
 
+
 button {
   font-size: inherit;
   display: inline-block;
@@ -124,6 +129,10 @@ hr {
   @media (max-width: 1024px) {
     display: none;
   }
+}
+
+p {
+  font-size: 1rem;
 }
 
 `

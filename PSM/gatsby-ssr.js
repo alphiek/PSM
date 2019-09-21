@@ -1,7 +1,19 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
+import Layout from './src/components/layout'
+import { GlobalStyle } from "./src/global/globalStyle"
 
-// You can delete this file if you're not using it
+require('typeface-roboto')
+require('typeface-roboto-slab')
+
+
+export const wrapPageElement = ({ element }) => {
+    if (typeof window !== "undefined") {
+        require("smooth-scroll")('a[href*="#"]')
+    }
+    return (
+        <>
+            <GlobalStyle />
+            <Layout>{element}</Layout>
+        </>
+    )
+}

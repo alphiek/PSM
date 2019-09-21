@@ -7,10 +7,13 @@ require('typeface-roboto-slab')
 
 
 export const wrapPageElement = ({ element }) => {
+    if (typeof window !== "undefined") {
+        require("smooth-scroll")('a[href*="#"]')
+    }
     return (
         <>
-        <GlobalStyle />
-        <Layout>{element}</Layout>
+            <GlobalStyle />
+            <Layout>{element}</Layout>
         </>
     )
 }

@@ -2,12 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from '../components/header/Header'
 
-const Layout = ({ children }) => {
-
-  if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]')
-  }
-  
+const Layout = ({ children }) => {  
   return (
       <div style={{ height: '100%' }}>
         <Header/>
