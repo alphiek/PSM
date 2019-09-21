@@ -42,3 +42,14 @@ export const FadeIn = keyframes`
     opacity: 1;
   }
 `
+
+export const FadeOutOverlay = keyframes`
+  from {
+     opacity: 1;
+     z-index: 9000;
+  }
+  to {
+    opacity: 0;
+    z-index: -20;
+  }
+`
