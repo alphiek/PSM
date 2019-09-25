@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 html {
   height: 100%;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #F8F8F8;
   width: 100%;
 }
 
@@ -19,10 +19,7 @@ body {
   color: #3D3F43;
   word-wrap: normal;
   font-kerning: normal;
-
-  @media (max-width: 1024px) {
-    text-align: center;
-  }
+  margin-bottom: 1rem;
 }
 
 * {
@@ -99,6 +96,29 @@ a:hover {
   outline-width: 0;
 }
 
+h1 {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  color: #F8F8F8;
+  font-weight: 700;
+  font-size: 3.052rem;
+  letter-spacing: 2px;
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #DBECE3;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #3D3F43;
+  letter-spacing: 0.5px;
+}
+
 
 button {
   font-size: inherit;
@@ -123,16 +143,6 @@ button:focus {
 
 button:active {
   background: tranparent;
-}
-
-hr {
-  @media (max-width: 1024px) {
-    display: none;
-  }
-}
-
-p {
-  font-size: 1rem;
 }
 
 `

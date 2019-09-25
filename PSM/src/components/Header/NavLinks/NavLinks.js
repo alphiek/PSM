@@ -66,6 +66,12 @@ const Spacer = styled.div`
 }
 `
 
+const MenuDivider = styled.hr`
+ @media (max-width: 1024px) {
+   display: none;
+ }
+`
+
 const NavLinks = ({ color, close }) => {
   const { social } = useSiteMetaData()
 
@@ -83,7 +89,7 @@ const NavLinks = ({ color, close }) => {
             >{link.name}</NavLink>
           </FadeInRight>
         </ListItem>
-        <hr />
+        <MenuDivider />
       </>
     )
   }
