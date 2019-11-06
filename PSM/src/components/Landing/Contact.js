@@ -18,6 +18,7 @@ export default Intro
 
 const ContactWrapper = styled.div`
   display: flex;
+  background-color: ${colors.tan};
   flex-direction: column;
   justify-content: center;
   align-items: center;
