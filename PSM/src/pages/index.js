@@ -1,21 +1,29 @@
 import React from "react"
-import styled from "styled-components"
+import { Helmet } from "react-helmet"
 import Landing from "../components/Landing/Landing"
 import { ServicesSection } from "../components/Services/ServicesSection"
-import { ThirdSection } from '../components/ThirdSection/ThirdSection'
+import { SkillsSection } from "../components/Skills/SkillsSection"
+import { GallerySection } from "../components/Gallery/GallerySection"
+import { ContactSection } from '../components/Contact/ContactSection'
 
-const Section = styled.div`
-  height: 100vh;
-`
 
 const IndexPage = () => (
-  <div>
-    <Landing />
-    <ServicesSection />
-    <ThirdSection />
-    <Section id="gallery">Gallery</Section>
-    <Section id="contact">Contact</Section>
-  </div>
+  <>
+    <Helmet>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+      />
+    </Helmet>
+    <div>
+      <Landing />
+      <ServicesSection />
+      <SkillsSection />
+      <GallerySection />
+      <ContactSection />>
+    </div>
+  </>
 )
 
 export default IndexPage

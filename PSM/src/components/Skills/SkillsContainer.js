@@ -27,6 +27,6 @@ const Item = styled.div`
   text-align: center;
   margin: 3rem 0;
   @media (max-width: 660px) {
-    width: 40%;
+    width: 50%;
   }
 `

@@ -5,4 +5,5 @@ export const colors = {
     white: '#FFF',
     slate: '#3d3f43',
     grey: '#D4DCDE',
+    medGrey: '#777C86',
 }

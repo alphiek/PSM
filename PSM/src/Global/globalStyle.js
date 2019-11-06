@@ -120,6 +120,14 @@ h4 {
   margin-bottom: 1rem;
 }
 
+h5 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #EBE3DF;
+  margin-bottom: 1rem;
+}
+
 p {
   font-size: 0.9rem;
   color: #3D3F43;
