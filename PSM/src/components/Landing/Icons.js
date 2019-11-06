@@ -1,5 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
+import { colors } from '../Utils/colors'
+
+const Icons = () => {
+  return (
+    <IconWrapper>
+      <Icon />
+      <Icon />
+      <Icon />
+    </IconWrapper>
+  )
+}
+
+export default Icons
 
 const IconWrapper = styled.div`
   display: flex;
@@ -8,7 +21,7 @@ const IconWrapper = styled.div`
   margin-top: -1.5rem;
   margin-bottom: 3rem;
   @media (max-width: 991px) {
-      margin-top: 3rem;
+    margin-top: 3rem;
   }
 `
 
@@ -16,17 +29,5 @@ const Icon = styled.div`
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: #F8F8F8;
+  background: ${colors.mutedWhite};
 `
-
-const Icons = () => {
-    return (
-        <IconWrapper>
-            <Icon />
-            <Icon />
-            <Icon />
-        </IconWrapper>
-    )
-}
-
-export default Icons

@@ -105,6 +105,13 @@ h1 {
   line-height: 120%;
 }
 
+h2 {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  color: #57585A;
+  font-size: 1.953rem;
+  line-height: 135%;
+}
+
 h4 {
   font-size: 1rem;
   font-weight: bold;
@@ -114,7 +121,7 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #3D3F43;
   letter-spacing: 0.5px;
 }
