@@ -2,20 +2,21 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { fullfixed, fill } from "../Utils/position"
+import elevation from "../Utils/elevation"
 import { colors } from "../Utils/colors"
 import { ContactWrapper } from "../Utils/containers"
-import { FormSection } from '../Contact/Form/FormSection'
-import { Areas } from '../Contact/Areas/Areas'
+import { FormSectionIOS } from "../Contact/Form/FormSectionIOS"
+import { Areas } from "../Contact/Areas/Areas"
 
 export const Modal = ({ click, styles }) => {
   return (
     <ModalContainer style={{ opacity: styles.opacity }}>
       <ModalWrapper>
         <ModalWindow>
-          <ContactWrapper>
-            <FormSection />
+          <ModalContactWrapper>
+            <FormSectionIOS />
             <Areas />
-          </ContactWrapper>
+          </ModalContactWrapper>
         </ModalWindow>
       </ModalWrapper>
       <BackdropCover
@@ -40,28 +41,47 @@ const ModalContainer = styled.div`
   right: 0;
   bottom: 0;
   -webkit-overflow-scrolling: touch;
-  overflow: scroll;
   display: flex;
   z-index: 99;
   justify-content: center;
   align-items: center;
+  &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+      -webkit-appearance: none;
+    }
+    scrollbar-width: none;
+  }
 `
 
 const BackdropCover = styled.div`
   ${fullfixed({})};
-  background-color: #222;
-  opacity: 0.8;
+  background-color: ${colors.slate};
 `
 
 const ModalWrapper = styled.div`
   display: flex;
+  border-radius: 6px;
+  ${elevation[2]};
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 101;
   width: 85%;
   height: 85%;
+  &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+      -webkit-appearance: none;
+    }
+    scrollbar-width: none;
+  }
   background-color: ${colors.slate};
+  @media (max-width: 991px) {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 `
 
 const ModalWindow = styled.div`
@@ -71,4 +91,12 @@ const ModalWindow = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+`
+
+const ModalContactWrapper = styled(ContactWrapper)`
+  @media (max-width: 991px) {
+    position: absolute;
+    top: 0;
+    padding: 50px 0;
+  }
 `

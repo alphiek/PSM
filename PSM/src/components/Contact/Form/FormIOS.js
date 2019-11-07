@@ -2,11 +2,12 @@ import React from "react"
 import { withFormik } from "formik"
 import * as Yup from "yup"
 import * as emailjs from "emailjs-com"
+import styled from 'styled-components'
+import { colors } from '../../Utils/colors'
 
 import {
   InputWrapper,
   FormWrapper,
-  Message,
   ErrorMessage,
   Submit,
 } from "./FormStyles"
@@ -19,7 +20,7 @@ const SignUp = ({
   handleSubmit,
   touched,
 }) => (
-    <>
+  <>
     <FormWrapper onSubmit={handleSubmit}>
       <label htmlFor="name">
         {errors.name && touched.name && (
@@ -48,31 +49,30 @@ const SignUp = ({
           noValidate
         />
       </label>
-      <label htmlFor="message">
+      <label htmlFor="messageIOS">
         {errors.message && touched.message && (
           <ErrorMessage id="feedback">{errors.message}</ErrorMessage>
         )}
-        <Message
-          id="message"
+        <MessageIOS
+          id="messageIOS"
           onChange={handleChange}
           placeholder="Message"
           onBlur={handleBlur}
-          name="message"
+          name="messageIOS"
           rows="4"
-          value={values.message || ""}
-        ></Message>
+          value={values.messageIOS || ""}
+        ></MessageIOS>
       </label>
       <Submit type="Submit">submit</Submit>
     </FormWrapper>
   </>
 )
- 
 
 const Form = withFormik({
   mapPropsToValues: () => ({
     name: "",
     email: "",
-    message: "",
+    messageIOS: "",
   }),
   validationSchema: Yup.object().shape({
     name: Yup.string()
@@ -81,7 +81,7 @@ const Form = withFormik({
     email: Yup.string()
       .email("Whoops, thats not a valid email address")
       .required("Email is needed"),
-    message: Yup.string()
+    messageIOS: Yup.string()
       .min(
         2,
         "Please leave a message or provide telephone number to request a callback"
@@ -98,7 +98,7 @@ const Form = withFormik({
     const template_params = {
       userName: values.name,
       userEmail: values.email,
-      userMessage: values.message,
+      userMessage: values.messageIOS,
     }
 
     emailjs.send(service_id, template_id, template_params, user_id).then(
@@ -118,3 +118,14 @@ const Form = withFormik({
 })(SignUp)
 
 export default Form
+
+export const MessageIOS = styled.textarea`
+  border: none;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  background-color: ${colors.tan};
+
+`

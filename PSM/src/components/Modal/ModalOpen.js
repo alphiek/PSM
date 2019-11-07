@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { ModalSVG } from "./ModalSVG"
 import { colors } from "../Utils/colors"
 
 export const ModalOpen = ({ click }) => {
@@ -12,7 +11,8 @@ export const ModalOpen = ({ click }) => {
         click()
       }}
     >
-      <ModalSVG />
+      <Contact>Have a project?</Contact>
+      <ContactSmall><ContactSpan>contact us</ContactSpan> for an estimate </ContactSmall>
     </ContactWrapper>
   )
 }
@@ -35,4 +35,29 @@ const ContactWrapper = styled.div`
     text-align: left;
     align-items: flex-start;
   }
+  @media (max-width: 660px) {
+    padding: 3rem 3rem 3rem 2rem;
+  }
 `
+
+const Contact = styled.p`
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.953rem;
+  letter-spacing: -1px;
+  line-height: 125%;
+  margin-bottom: 10px;
+`
+
+const ContactSpan = styled.span`
+text-decoration: underline;
+`
+
+const ContactSmall = styled.p`
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.563rem;
+  letter-spacing: -1px;
+  line-height: 125%;
+`
+

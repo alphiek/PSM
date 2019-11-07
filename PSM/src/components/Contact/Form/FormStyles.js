@@ -9,7 +9,7 @@ export const FormWrapper = styled.form`
   }
   @media (max-width: 660px) {
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
   }
 `
 export const InputWrapper = styled.input`

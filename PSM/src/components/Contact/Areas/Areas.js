@@ -36,7 +36,7 @@ const AreaContainer = styled.div`
   @media (max-width: 660px) {
     margin-top: 30px;
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
   }
 `
 

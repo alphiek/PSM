@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const SectionMargin = styled.section`
+  position: relative;
   margin: 0 5%;
   @media (max-width: 991px) {
     margin: 0 30px;
@@ -16,6 +17,7 @@ export const Flex = styled.div`
 `
 
 export const SectionFullWidth = styled(Flex)`
+  position: relative;
   text-align: center;
   align-items: ${props => props.align};
   justify-content: ${props => props.justify};
@@ -40,4 +42,11 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     align-items: flex-start;
   }
+`
+
+export const ScrollStop = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
 `

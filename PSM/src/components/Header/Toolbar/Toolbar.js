@@ -3,9 +3,10 @@ import styled from "styled-components"
 import PropTypes from "prop-types"
 
 import Logo from "../Logo"
-import NavLinks from "../NavLinks/NavLinks"
+import { DisplayNavLinks } from "../NavLinks/DisplayNavLinks"
 import SideDrawerToggle from "../SideDrawer/SideDrawerToggle"
-import elevation from '../../Utils/elevation'
+import elevation from "../../Utils/elevation"
+import { colors } from "../../Utils/colors"
 
 const Toolbar = ({ toggleHandler }) => {
   return (
@@ -14,7 +15,7 @@ const Toolbar = ({ toggleHandler }) => {
         <Logo />
         <Spacer />
         <ToolbarNavItems>
-          <NavLinks color="#3D3F43" />
+          <DisplayNavLinks color={colors.slate} />
         </ToolbarNavItems>
         <SideDrawerToggle click={toggleHandler} />
       </nav>
@@ -39,5 +40,5 @@ const ToolbarNavItems = styled.div`
 `
 
 const Header = styled.header`
-   ${elevation[3]};
+  ${elevation[3]};
 `

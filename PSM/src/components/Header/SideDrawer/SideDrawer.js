@@ -2,15 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Spring, animated as a } from "react-spring/renderprops"
 import styled from "styled-components"
-import { colors } from '../../Utils/colors'
-import NavLinks from "../NavLinks/NavLinks"
+import { colors } from "../../Utils/colors"
+import { DisplayNavLinks } from "../NavLinks/DisplayNavLinks"
 
 const SideDrawer = ({ show, toggleHandler }) => {
   return (
     <Spring from={{ right: -1000 }} to={{ right: show ? 0 : -1000 }}>
       {props => (
         <SideDrawerContainer style={props}>
-          <NavLinks close={toggleHandler} color="white" />
+          <DisplayNavLinks close={toggleHandler} color={colors.white} />
         </SideDrawerContainer>
       )}
     </Spring>
@@ -19,6 +19,7 @@ const SideDrawer = ({ show, toggleHandler }) => {
 
 SideDrawer.propTypes = {
   show: PropTypes.bool.isRequired,
+  toggleHandler: PropTypes.func.isRequired,
 }
 
 export default SideDrawer

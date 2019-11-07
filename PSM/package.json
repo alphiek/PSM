@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "paphos-stone-masons",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Paphos Stone Masons Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "RKK Creative",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "emailjs-com": "^2.4.0",

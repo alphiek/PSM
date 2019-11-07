@@ -1,13 +1,5 @@
 import { keyframes } from 'styled-components'
 
-export const Bounce = keyframes`
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-3px);
-  }
-`
 
 export const Grow = keyframes`
   0% {
@@ -24,32 +16,3 @@ export const Grow = keyframes`
   }
 `
 
-export const SlideDown = keyframes`
-  from {
-    top: -300px;
-  }
-  to {
-    top: 0px;
-  }
-`
-
-
-export const FadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`
-
-export const FadeOutOverlay = keyframes`
-  from {
-     opacity: 1;
-     z-index: 9000;
-  }
-  to {
-    opacity: 0;
-    z-index: -20;
-  }
-`

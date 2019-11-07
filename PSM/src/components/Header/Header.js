@@ -2,7 +2,7 @@ import React from "react"
 import { useToggle } from "../../hooks/useToggle"
 import Toolbar from "./Toolbar/Toolbar"
 import SideDrawer from "./SideDrawer/SideDrawer"
-import Backdrop from "./Backdrop/Backdrop"
+import { Backdrop } from "./Backdrop/Backdrop"
 
 const Header = () => {
   const { isShowing, toggle } = useToggle(false)

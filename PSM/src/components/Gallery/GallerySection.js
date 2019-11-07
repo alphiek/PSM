@@ -1,16 +1,17 @@
 import React from "react"
 import styled from "styled-components"
-import { SectionFullWidth } from "../Utils/containers"
+import { SectionFullWidth, ScrollStop } from "../Utils/containers"
 import { colors } from "../Utils/colors"
 import { Carousel } from "./Carousel"
 
 export const GallerySection = () => {
   return (
-    <SectionFullWidth background={colors.slate} id="gallery" align='center'>
+    <SectionFullWidth background={colors.slate} align='center'>
       <H2Light>Swipe to view our recent projects</H2Light>
       <CarouselContainer>
         <Carousel />
       </CarouselContainer>
+      <ScrollStop id="contact" />
     </SectionFullWidth>
   )
 }

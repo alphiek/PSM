@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 import BackgroundSection from "./LandingImage"
 import Intro from "./Intro"
-import { SectionMargin } from '../Utils/containers'
-import { ModalControl } from '../Modal/ModalControl'
+import { SectionMargin, ScrollStop } from "../Utils/containers"
+import { ModalControl } from "../Modal/ModalControl"
 
 const Landing = () => {
   return (
@@ -22,18 +22,21 @@ const Landing = () => {
         <Intro />
         <ModalControl />
       </IntroContainer>
+      <ScrollStop  id="services"/>
     </SectionMargin>
   )
 }
 
 export default Landing
 
-
 const H1Wrapper = styled.div`
   min-height: 20rem;
   display: flex;
   align-items: center;
   padding: 3rem;
+  @media (max-width: 660px) {
+    padding: 2rem 1rem 2.5rem 2rem;
+  }
 `
 const IntroContainer = styled.div`
   display: flex;

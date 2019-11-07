@@ -7,7 +7,7 @@ import { ContactWrapper } from '../Utils/containers'
 
 export const ContactSection = () => {
   return (
-    <Section id="contact">
+    <Section>
       <ContactWrapper>
         <FormSection />
         <Areas />
@@ -16,7 +16,7 @@ export const ContactSection = () => {
   )
 }
 
-const Section = styled.section`
+const Section = styled.footer`
   background-color: ${colors.medGrey};
   color: ${colors.tan};
   padding: 6rem 5%;

@@ -7,6 +7,7 @@ html {
   font-size: 16px;
   background-color: #F8F8F8;
   width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -45,6 +46,7 @@ section {
 
 main {
   margin-top: 100px;
+  position: relative;
 }
 
 header {
@@ -103,6 +105,9 @@ h1 {
   font-size: 3.052rem;
   letter-spacing: 2px;
   line-height: 120%;
+  @media (max-width: 660px ) {
+    letter-spacing: 0;
+  }
 }
 
 h2 {
