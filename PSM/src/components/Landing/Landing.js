@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 import BackgroundSection from "./LandingImage"
 import Intro from "./Intro"
-import Contact from "./Contact"
 import { SectionMargin } from '../Utils/containers'
+import { ModalControl } from '../Modal/ModalControl'
 
 const Landing = () => {
   return (
@@ -20,7 +20,7 @@ const Landing = () => {
       </BackgroundSection>
       <IntroContainer>
         <Intro />
-        <Contact />
+        <ModalControl />
       </IntroContainer>
     </SectionMargin>
   )

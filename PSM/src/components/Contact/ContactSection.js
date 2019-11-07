@@ -3,14 +3,15 @@ import styled from "styled-components"
 import { colors } from "../Utils/colors"
 import { Areas } from './Areas/Areas'
 import { FormSection } from "./Form/FormSection"
+import { ContactWrapper } from '../Utils/containers'
 
 export const ContactSection = () => {
   return (
     <Section id="contact">
-      <ContentWrapper>
+      <ContactWrapper>
         <FormSection />
         <Areas />
-      </ContentWrapper>
+      </ContactWrapper>
     </Section>
   )
 }
@@ -27,16 +28,4 @@ const Section = styled.section`
   }
 `
 
-const ContentWrapper = styled.div`
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 991px) {
-    width: 80%;
-  }
-  @media (max-width: 660px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-`
+

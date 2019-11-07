@@ -27,3 +27,17 @@ export const SectionFullWidth = styled(Flex)`
     align-items: center;
   }
 `
+
+export const ContactWrapper = styled.div`
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 991px) {
+    width: 80%;
+  }
+  @media (max-width: 660px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+`

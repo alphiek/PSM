@@ -1,6 +1,7 @@
 import React from "react"
 import { withFormik } from "formik"
 import * as Yup from "yup"
+import * as emailjs from "emailjs-com"
 
 import {
   InputWrapper,
@@ -26,7 +27,7 @@ const SignUp = ({
         )}
         <InputWrapper
           type="text"
-          placeholder="name"
+          placeholder="Enter name"
           onChange={handleChange}
           onBlur={handleBlur}
           value={values.name || ""}
@@ -39,7 +40,7 @@ const SignUp = ({
         )}
         <InputWrapper
           type="email"
-          placeholder='email'
+          placeholder="email"
           onChange={handleChange}
           onBlur={handleBlur}
           value={values.email || ""}
@@ -54,7 +55,7 @@ const SignUp = ({
         <Message
           id="message"
           onChange={handleChange}
-          placeholder='Message'
+          placeholder="Message"
           onBlur={handleBlur}
           name="message"
           rows="4"
@@ -71,7 +72,6 @@ const Form = withFormik({
     name: "",
     email: "",
     message: "",
-    consent: false,
   }),
   validationSchema: Yup.object().shape({
     name: Yup.string()
@@ -80,9 +80,6 @@ const Form = withFormik({
     email: Yup.string()
       .email("Whoops, thats not a valid email address")
       .required("Email is needed"),
-    consent: Yup.bool()
-      .oneOf([true], "Please give us consent to contact you")
-      .required("Please give us consent to contact you"),
     message: Yup.string()
       .min(
         2,
@@ -93,11 +90,27 @@ const Form = withFormik({
       ),
   }),
 
-  handleSubmit: (values, { setSubmitting }) => {
-    setTimeout(() => {
-      alert(JSON.stringify(values, null, 2))
-      setSubmitting(false)
-    }, 1000)
+  handleSubmit: (values, { resetForm }) => {
+    const service_id = "psm_server"
+    const template_id = "psm"
+    const user_id = "user_ZMlKO4DovnMwu3oU4qka9"
+    const template_params = {
+      userName: values.name,
+      userEmail: values.email,
+      userMessage: values.message,
+    }
+
+    emailjs.send(service_id, template_id, template_params, user_id).then(
+      function(response) {
+        alert("Success")
+        console.log(`Message Sent`)
+        resetForm()
+      },
+      function(error) {
+        alert("Fail")
+        console.log("Email sending failed", error)
+      }
+    )
   },
 
   displayName: "Contact Form",

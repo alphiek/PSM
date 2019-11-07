@@ -1,17 +1,25 @@
 import React from "react"
+import PropTypes from "prop-types"
 import styled from "styled-components"
-import { ContactCTA } from './ContactCTA'
-import { colors } from '../Utils/colors'
+import { ModalSVG } from "./ModalSVG"
+import { colors } from "../Utils/colors"
 
-const Intro = () => {
+export const ModalOpen = ({ click }) => {
   return (
-    <ContactWrapper>
-      <ContactCTA />
+    <ContactWrapper
+      onClick={e => {
+        e.preventDefault()
+        click()
+      }}
+    >
+      <ModalSVG />
     </ContactWrapper>
   )
 }
 
-export default Intro
+ModalOpen.propTypes = {
+  click: PropTypes.func.isRequired,
+}
 
 const ContactWrapper = styled.div`
   display: flex;
@@ -28,4 +36,3 @@ const ContactWrapper = styled.div`
     align-items: flex-start;
   }
 `
-

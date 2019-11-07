@@ -35,6 +35,7 @@ export const Message = styled.textarea`
 export const ErrorMessage = styled.p`
   margin-bottom: 0.5rem;
   width: 65%;
+  color: white;
 `
 
 export const Submit = styled.button`
