@@ -1,14 +1,17 @@
+require("dotenv").config()
+
 module.exports = {
-  siteMetadata: {
-    title: `Paphos Stone Masons`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `RKK Creative`,
-    social: {
-      fb: `https://www.facebook.com/paphosstonemasons/`,
-      insta: `https://www.instagram.com/paphosstone/`,
-      email: `info@paphosstonemasons.com`
-    }
-  },
+    siteMetadata: {
+      title: `Paphos Stone Masons - Decorative Stonework and Landscape Masonry`,
+      description: `Specialists for Traditional Decorative Stonework, Landscape Masonry and Stone Paving in Paphos.`,
+      siteUrl: `https://www.paphosstonemasons.com`,
+      social: {
+        fb: 'https://www.facebook.com/paphosstonemasons/',
+        insta: 'https://www.instagram.com/paphosstone/',
+        email: `info@paphosstonemasons.com`
+      },
+      handle: `@paphosstonemas1`
+    },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
@@ -31,17 +34,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Paphos Stone Masons`,
+        short_name: `PSM`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
+        display: `standalone`,
+        icon: `src/images/faviconIcon.png`,
     },
+  },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+],
 }

@@ -6,11 +6,15 @@ export const useSiteMetaData = () => {
       query {
         site {
           siteMetadata {
+            title
+            description
+            siteUrl
             social {
               fb
               insta
               email
             }
+            handle
           }
         }
       }

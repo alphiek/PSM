@@ -91,9 +91,9 @@ const Form = withFormik({
   }),
 
   handleSubmit: (values, { resetForm }) => {
-    const service_id = "psm_server"
-    const template_id = "psm"
-    const user_id = "user_ZMlKO4DovnMwu3oU4qka9"
+    const service_id = `${process.env.GATSBY_SERVICE_ID}`
+    const template_id = `${process.env.GATSBY_TEMPLATE_ID}`
+    const user_id = `${process.env.GATSBY_USER_ID}`
     const template_params = {
       userName: values.name,
       userEmail: values.email,
