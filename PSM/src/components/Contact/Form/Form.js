@@ -55,7 +55,7 @@ const SignUp = ({
         <Message
           id="message"
           onChange={handleChange}
-          placeholder="Message"
+          placeholder="What can we help with?"
           onBlur={handleBlur}
           name="message"
           rows="4"
@@ -103,13 +103,12 @@ const Form = withFormik({
 
     emailjs.send(service_id, template_id, template_params, user_id).then(
       function(response) {
-        alert("Success")
+        alert("Thanks for your request we'll be in touch shortly")
         console.log(`Message Sent`)
         resetForm()
       },
       function(error) {
-        alert("Fail")
-        console.log("Email sending failed", error)
+        alert("There was an error sending your message please try again")
       }
     )
   },

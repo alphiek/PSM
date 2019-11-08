@@ -10,8 +10,8 @@ export const Icons = ({ name }) => {
 }
 
 const Icon = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   background: ${colors.slate};
   border-radius: 50%;
   margin: 0 auto;

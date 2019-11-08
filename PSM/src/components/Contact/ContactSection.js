@@ -16,7 +16,7 @@ export const ContactSection = () => {
   )
 }
 
-const Section = styled.footer`
+const Section = styled.section`
   background-color: ${colors.medGrey};
   color: ${colors.tan};
   padding: 6rem 5%;

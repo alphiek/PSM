@@ -11,5 +11,5 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  min-height: 60px;
 `

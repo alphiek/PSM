@@ -56,7 +56,7 @@ const SignUp = ({
         <MessageIOS
           id="messageIOS"
           onChange={handleChange}
-          placeholder="Message"
+          placeholder="What can we help with?"
           onBlur={handleBlur}
           name="messageIOS"
           rows="4"
@@ -68,7 +68,7 @@ const SignUp = ({
   </>
 )
 
-const Form = withFormik({
+const FormIOS = withFormik({
   mapPropsToValues: () => ({
     name: "",
     email: "",
@@ -103,13 +103,11 @@ const Form = withFormik({
 
     emailjs.send(service_id, template_id, template_params, user_id).then(
       function(response) {
-        alert("Success")
-        console.log(`Message Sent`)
+        alert("Thanks for your request we'll be in touch shortly")
         resetForm()
       },
       function(error) {
-        alert("Fail")
-        console.log("Email sending failed", error)
+        alert("There was an error sending your message please try again")
       }
     )
   },
@@ -117,7 +115,7 @@ const Form = withFormik({
   displayName: "Contact Form",
 })(SignUp)
 
-export default Form
+export default FormIOS
 
 export const MessageIOS = styled.textarea`
   border: none;

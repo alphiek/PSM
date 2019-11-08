@@ -117,6 +117,18 @@ h2 {
   line-height: 135%;
 }
 
+h3 {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  color: #57585A;
+  font-size: 1.563rem;
+  line-height: 135%;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  position: relative;
+  bottom: -1rem;
+}
+
+
 h4 {
   font-size: 1rem;
   font-weight: bold;
@@ -163,6 +175,15 @@ button:focus {
 
 button:active {
   background: tranparent;
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+textarea:focus, input:focus{
+    outline: white;
 }
 
 `

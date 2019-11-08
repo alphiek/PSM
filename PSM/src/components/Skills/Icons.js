@@ -4,12 +4,20 @@ import { colors } from '../Utils/colors'
 
 
 export const Icons = ({ name }) => {
+  switch (name) {
+    case 'fireplaces':
     return (
-        <Icon />
+      <Icon />
+  )
+  default:
+    return (
+      <Icon />
     )
+  }
+    
 }
 
-const Icon = styled.div`
+const Icon = styled.img`
   width: 3rem;
   height: 3rem;
   background: ${colors.slate};

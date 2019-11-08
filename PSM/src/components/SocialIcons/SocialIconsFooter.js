@@ -3,20 +3,20 @@ import styled from "styled-components"
 import { colors } from "../Utils/colors"
 
 const Icon = styled.svg`
-  fill: ${props => props.fill};
+  fill: ${colors.white};
   height: 1.2rem;
-  margin: 0 0 0 1.2rem;
+  margin: 1rem 2rem 0 0;
   transition: 0.4s all ease-in-out;
   :hover {
-    fill: ${colors.tan};
+    fill: ${colors.mint};
   }
   @media (max-width: 1024px) {
-    margin: 0.5rem 0rem 0.5rem 3rem;
+    margin: 2rem 2.5rem 0 0;
     height: 2rem;
   }
 `
 
-export const SocialIcons = ({ fill, name }) => {
+export const SocialIconsFooter = ({ fill, name }) => {
   switch (name) {
     case "fb":
       return (
@@ -44,15 +44,6 @@ export const SocialIcons = ({ fill, name }) => {
                    c0.8,0,1.5-0.2,2.2-0.6c0.7-0.4,1.2-0.9,1.6-1.6C19.1,16.7,19.3,15.9,19.3,15.2z M27.2,5V3.5c0-0.3-0.1-0.5-0.3-0.7
                    c-0.2-0.2-0.4-0.3-0.7-0.3c-1.1,0-2.1,0-3.2,0c-0.3,0-0.5,0.1-0.7,0.3c-0.2,0.2-0.3,0.5-0.2,0.7v3.2c0,0.3,0.1,0.5,0.3,0.7
                    c0.2,0.2,0.4,0.3,0.7,0.3h3.2c0.5,0,0.9-0.3,1-0.8c0,0,0-0.1,0-0.1L27.2,5z"
-          />
-        </Icon>
-      )
-    case "email":
-      return (
-        <Icon viewBox="0 0 37.5 30" fill={fill} alt="Email Link">
-          <path
-            d="M33.75,0A3.84,3.84,0,0,1,37.5,3.75v22.5A3.84,3.84,0,0,1,33.75,30h-30A3.84,3.84,0,0,
-            1,0,26.25V3.75A3.84,3.84,0,0,1,3.75,0Zm0,7.5V3.75l-15,9.38-15-9.38V7.5l15,9.38Z"
           />
         </Icon>
       )

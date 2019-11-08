@@ -13,14 +13,10 @@ export const ModalControl = () => {
 
   if (typeof document !== "undefined") {
      body = document.body
-    console.log(body)
     if (isShowing) {
-      console.log(`showing`)
       body.style.position = "fixed"
-      console.log(body)
     } else {
       body.style.position = "relative"
-      console.log(`notshowing`)
     }
   }
 

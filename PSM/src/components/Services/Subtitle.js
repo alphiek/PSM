@@ -10,6 +10,13 @@ export const Subtitle = () => (
 const SubtitleWrapper = styled.div`
   padding: 6rem 0rem 6rem 0rem;
   position: relative;
+  @media (max-width: 660px ) {
+    padding: 3.5rem 10rem 3.5rem 2rem;
+  }
+  @media( max-width: 479px) {
+    padding: 3.5rem 3rem 3.5rem 2rem;
+
+  }
 `
 
 const H2withline = styled.h2`
@@ -41,5 +48,8 @@ const H2withline = styled.h2`
     @media (max-width: 768px) {
     display: none;
     }
+  }
+  @media (max-width: 768px) {
+    text-align: left;
   }
 `

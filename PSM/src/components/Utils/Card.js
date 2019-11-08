@@ -4,29 +4,30 @@ import { Icons } from "../Services/Icons"
 import elevation from "../Utils/elevation"
 import { Divider } from "../Utils/divider"
 
+
 export const Card = ({ data }) => {
   return (
-    <CardWrapper>
-      <GridArea1>
-        <Icons />
-        <h3>{data.title}</h3>
-        <h4>{data.cta}</h4>
-      </GridArea1>
-      <GridArea2>
-        <Divider color={data.hr} />
-        <p>{data.p}</p>
-      </GridArea2>
-    </CardWrapper>
+      <CardWrapper>
+        <GridArea1>
+          <Icons />
+          <h3>{data.title}</h3>
+        </GridArea1>
+        <GridArea2>
+          <Divider color={data.hr} />
+          <p>{data.p}</p>
+        </GridArea2>
+      </CardWrapper>
   )
 }
 
 const CardWrapper = styled.div`
   flex: 0 1 350px;
+  border-radius: 8px;
   display: grid;
   background-color: white;
   grid-template-columns: 100%;
-  grid-template-rows: 100px auto;
-  padding: 2rem;
+  grid-template-rows: 75px auto;
+  padding: 2rem 2rem 2.5rem;
   ${elevation[3]};
   text-align: center;
   &:nth-child(2) {
@@ -52,8 +53,12 @@ const CardWrapper = styled.div`
 `
 
 const GridArea1 = styled.div`
+  position: relative;
+  top: -50px;
   grid-area: one;
+
   @media (max-width: 991px) {
+    top: 0;
     display: flex;
     flex-direction: column;
     height: 100%;

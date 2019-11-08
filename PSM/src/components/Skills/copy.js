@@ -40,4 +40,4 @@ export const skillsCopy = [
 export const skillsInfo = `With stone work being a prominent feature throughout Cyprus properties, 
 quality work can really set the tone for your property. Whether you are looking to repair existing 
 stone work or add an exciting feature to your garden or the interior of your home our highly skilled 
-workers are the perfect match to undertake any stone masonry requirements throughout the Paphos district.`
+workers are the perfect match to undertake any stone masonry requirements throughout\xa0the\xa0Paphos\xa0district.`

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { colors } from '../../Utils/colors'
+import elevation from '../../Utils/elevation'
 
 export const FormWrapper = styled.form`
   margin-top: 2rem;
@@ -47,4 +48,14 @@ export const Submit = styled.button`
   border: 0.25rem solid ${colors.tan};
   color: ${colors.tan};
   text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+  ${elevation[1]};
+  :hover {
+    background-color: ${colors.tan};
+    color: ${colors.slate};
+    border: 0.25rem solid ${colors.tan};
+    font-weight: 700;
+    ${elevation[4]};
+  }
 `
+

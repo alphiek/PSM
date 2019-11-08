@@ -34,6 +34,9 @@ const IntroWrapper = styled.div`
   @media (max-width: 991px) {
     width: 100%;
   }
+  @media (max-width: 660px) {
+    padding: 2rem 3rem 2.5rem 2rem;
+  }
 `
 
 const LightParagraph = styled.p`

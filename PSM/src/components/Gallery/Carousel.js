@@ -17,24 +17,24 @@ export const Carousel = () => {
 
     const params = {
       slidesPerView: 6,
-      spaceBetween: 0,
+      spaceBetween: 10,
       grabCursor: true,
       breakpoints: {
         1024: {
           slidesPerView: 5,
-          spaceBetween: 0
+          spaceBetween: 20
         },
         768: {
           slidesPerView: 4,
-          spaceBetween: 0
+          spaceBetween: 20
         },
         640: {
           slidesPerView: 2,
-          spaceBetween: 0
+          spaceBetween: 20
         },
         320: {
           slidesPerView: 1,
-          spaceBetween: 0
+          spaceBetween: 20
         }
       }
     }
@@ -49,4 +49,5 @@ export const Carousel = () => {
 const Image = styled(Img)`
   width: 100%;
   border-radius: 6px;
+  background-color: rgba(255,255,255, 0.08);
 `
