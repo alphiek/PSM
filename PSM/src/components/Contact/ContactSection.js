@@ -1,9 +1,9 @@
 import React from "react"
-import styled from "styled-components"
-import { colors } from "../Utils/colors"
+
 import { Areas } from './Areas/Areas'
 import { FormSection } from "./Form/FormSection"
 import { ContactWrapper } from '../Utils/containers'
+import { Section } from './styles'
 
 export const ContactSection = () => {
   return (
@@ -16,16 +16,6 @@ export const ContactSection = () => {
   )
 }
 
-const Section = styled.section`
-  background-color: ${colors.medGrey};
-  color: ${colors.tan};
-  padding: 6rem 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 991px) {
-    padding: 6rem 0;
-  }
-`
+
 
 

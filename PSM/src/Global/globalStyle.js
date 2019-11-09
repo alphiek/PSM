@@ -58,6 +58,13 @@ header {
   z-index: 50;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
 nav {
   position: relative;
   display: flex;

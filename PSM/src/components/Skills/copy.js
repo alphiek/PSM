@@ -13,7 +13,7 @@ export const skillsCopy = [
   },
   {
     name: `Pergolas & Patios`,
-    icon: `pergolas`,
+    icon: `patio`,
   },
   {
     name: `Fireplaces`,
@@ -29,7 +29,7 @@ export const skillsCopy = [
   },
   {
     name: `Stairwells`,
-    icon: `stairwells`,
+    icon: `stairs`,
   },
   {
     name: `Bars & BBQ Areas`,

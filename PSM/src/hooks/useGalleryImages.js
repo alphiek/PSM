@@ -11,7 +11,7 @@ export const useGalleryImages = () => {
               name
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

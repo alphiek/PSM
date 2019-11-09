@@ -5,4 +5,5 @@ export default [
     'box-shadow: 0 10px 20px rgba(75,74,104,0.10), 0 6px 6px rgba(75,74,104,0.10);',
     'box-shadow: 0 14px 28px rgba(75,74,104,0.25), 0 10px 10px rgba(75,74,104,0.22);',
     'box-shadow: 0 19px 38px rgba(75,74,104,0.30), 0 15px 12px rgba(75,74,104,0.22);',
+    'box-shadow: 0 19px 38px rgba(75,74,104,0.47), 0 15px 12px rgba(75,74,104,0.35);',
   ];

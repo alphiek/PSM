@@ -1,13 +1,5 @@
 import React from "react"
-import styled from "styled-components"
-
-const LogoIcon = styled.svg`
-  height: auto;
-  width: 6.2rem;
-  @media (max-width: 1024px) {
-    width: 7rem;
-  }
-`
+import { LogoIcon } from './styles'
 
 const Logo = () => {
   return (

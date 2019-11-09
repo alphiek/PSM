@@ -1,10 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 
 import BackgroundSection from "./LandingImage"
 import Intro from "./Intro"
 import { SectionMargin, ScrollStop } from "../Utils/containers"
 import { ModalControl } from "../Modal/ModalControl"
+import { H1Wrapper, IntroContainer} from './styles'
 
 const Landing = () => {
   return (
@@ -29,19 +29,3 @@ const Landing = () => {
 
 export default Landing
 
-const H1Wrapper = styled.div`
-  min-height: 20rem;
-  display: flex;
-  align-items: center;
-  padding: 3rem;
-  @media (max-width: 660px) {
-    padding: 2rem 1rem 2.5rem 2rem;
-  }
-`
-const IntroContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 991px) {
-    flex-direction: column-reverse;
-  }
-`

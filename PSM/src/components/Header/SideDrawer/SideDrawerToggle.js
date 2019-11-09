@@ -1,7 +1,7 @@
 import React from "react"
-import styled from "styled-components"
 import PropTypes from "prop-types"
-import { colors } from "../../Utils/colors"
+import { SideDrawerButton, BurgerIcon } from '../styles'
+
 
 const SideDrawerToggle = ({ click }) => (
   <SideDrawerButton onClick={click}>
@@ -21,15 +21,4 @@ SideDrawerToggle.propTypes = {
 
 export default SideDrawerToggle
 
-const SideDrawerButton = styled.button`
-  display: flex;
-  @media (min-width: 1025px) {
-    display: none;
-  }
-`
 
-const BurgerIcon = styled.svg`
-  fill: ${colors.slate};
-  width: auto;
-  width: 1.5rem;
-`

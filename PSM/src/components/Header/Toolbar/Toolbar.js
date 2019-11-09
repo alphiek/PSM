@@ -1,19 +1,18 @@
 import React from "react"
-import styled from "styled-components"
 import PropTypes from "prop-types"
 
 import Logo from "../Logo"
 import { DisplayNavLinks } from "../NavLinks/DisplayNavLinks"
 import SideDrawerToggle from "../SideDrawer/SideDrawerToggle"
-import elevation from "../../Utils/elevation"
 import { colors } from "../../Utils/colors"
+import { SpacerToolbar, Header, ToolbarNavItems } from "../styles"
 
 const Toolbar = ({ toggleHandler }) => {
   return (
     <Header>
       <nav>
         <Logo />
-        <Spacer />
+        <SpacerToolbar />
         <ToolbarNavItems>
           <DisplayNavLinks color={colors.slate} />
         </ToolbarNavItems>
@@ -28,17 +27,3 @@ Toolbar.propTypes = {
 }
 
 export default Toolbar
-
-const Spacer = styled.div`
-  flex: 1;
-`
-
-const ToolbarNavItems = styled.div`
-  @media (max-width: 1024px) {
-    display: none;
-  }
-`
-
-const Header = styled.header`
-  ${elevation[3]};
-`

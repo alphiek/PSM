@@ -5,15 +5,15 @@ import { Link } from "gatsby"
 import { colors } from "./colors"
 
 export const GatsbyLink = ({ link, close, color }) => (
-  <NavLink
-    to={link.id}
-    color={color}
-    activeStyle={{ textDecoration: "underline" }}
-    partiallyActive={true}
-    onClick={close}
-  >
-    {link.name}
-  </NavLink>
+    <NavLink
+      to={link.id}
+      color={color}
+      activeStyle={{ textDecoration: "underline" }}
+      partiallyActive={true}
+      onClick={close}
+    >
+      {link.name}
+    </NavLink>
 )
 
 GatsbyLink.propTypes = {

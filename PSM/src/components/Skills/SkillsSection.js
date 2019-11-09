@@ -1,9 +1,8 @@
 import React from "react"
-import styled from "styled-components"
+import { InfoWrapper } from './styles'
 import { SectionFullWidth, ScrollStop } from "../Utils/containers"
 import { SkillsContainer } from "./SkillsContainer"
 import { skillsInfo } from "./copy"
-import { colors } from "../Utils/colors"
 
 export const SkillsSection = () => (
   <SectionFullWidth background="white" align="center">
@@ -16,15 +15,4 @@ export const SkillsSection = () => (
   </SectionFullWidth>
 )
 
-const InfoWrapper = styled.div`
-  width: 50%;
-  background-color: ${colors.tan};
-  text-align: center;
-  padding: 2rem;
-  @media (max-width: 991px) {
-    width: 80%;
-  }
-  @media (max-width: 660px) {
-    width: 90%;
-  }
-`
+

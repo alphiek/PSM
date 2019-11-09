@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Spring, animated as a } from "react-spring/renderprops"
-import styled from "styled-components"
+import { Spring } from "react-spring/renderprops"
 import { colors } from "../../Utils/colors"
 import { DisplayNavLinks } from "../NavLinks/DisplayNavLinks"
+import { SideDrawerContainer } from '../styles'
 
 const SideDrawer = ({ show, toggleHandler }) => {
   return (
@@ -23,23 +23,3 @@ SideDrawer.propTypes = {
 }
 
 export default SideDrawer
-
-const SideDrawerContainer = styled(a.nav)`
-  height: 100vh;
-  max-height: 100vh;
-  background: ${colors.slate};
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 70%;
-  max-width: 400px;
-  display: block;
-  z-index: 200;
-  @media (min-width: 1025px) {
-    display: none;
-  }
-  @media (max-width: 480px) {
-    width: 80%;
-  }
-`

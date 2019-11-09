@@ -9,7 +9,7 @@ export const Card = ({ data }) => {
   return (
       <CardWrapper>
         <GridArea1>
-          <Icons />
+          <Icons name={data.title}/>
           <h3>{data.title}</h3>
         </GridArea1>
         <GridArea2>

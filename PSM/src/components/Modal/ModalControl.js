@@ -12,7 +12,7 @@ export const ModalControl = () => {
   let body
 
   if (typeof document !== "undefined") {
-     body = document.body
+    body = document.body
     if (isShowing) {
       body.style.position = "fixed"
     } else {

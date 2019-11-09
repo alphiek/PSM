@@ -1,15 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
 
 export const Footer = () => (
-    <FooterWrapper>
+    <footer>
         <p>© {new Date().getFullYear()}, Paphos Stone Masons, all rights reserved</p>
-    </FooterWrapper>
+    </footer>
 )
 
-const FooterWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60px;
-`
