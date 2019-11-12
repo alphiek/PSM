@@ -91,21 +91,21 @@ export const Icons = ({ name }) => {
       return (
         <Icon>
           <svg x="0px" y="0px" viewBox="0 0 30 30" >
-          <circle class="cls-1" cx="15" cy="15" r="15"fill={colors.slate}/>
+          <circle class="cls-1" cx="15" cy="15" r="15" fill={colors.slate}/>
   <g fill={colors.tan}>
-    <rect class="cls-2" x="18.16" y="6.08" width="1.55" height="0.77"/>
-    <rect class="cls-2" x="21.21" y="6.89" width="0.77" height="1.55" transform="translate(1.82 19.25) rotate(-49.9)"/>
-    <rect class="cls-2" x="20.43" y="22.08" width="1.55" height="0.77"/>
-    <rect class="cls-2" x="15.07" y="6.08" width="1.55" height="0.77"/>
-    <rect class="cls-2" x="25.63" y="17.22" width="0.77" height="1.55"/>
-    <rect class="cls-2" x="25.63" y="14.12" width="0.77" height="1.55"/>
-    <rect class="cls-2" x="23.58" y="8.89" width="0.77" height="1.55" transform="translate(1.14 21.78) rotate(-49.91)"/>
-    <polygon class="cls-2" points="25.99 10.86 25.49 11.45 25.64 11.57 25.64 12.57 26.41 12.57 26.41 11.21 25.99 10.86"/>
-    <rect class="cls-2" x="25.63" y="20.32" width="0.77" height="1.55"/>
-    <rect class="cls-2" x="23.52" y="22.08" width="1.55" height="0.77"/>
-    <path class="cls-2" d="M18.59,13l.5-.59L12.47,6.85h1V6.08H12v.35L11.41,6,5.18,11.21h0L3.73,12.43l.5.59.95-.8V22.85h13.7v-.77H17.64V12.22Zm-1.72-1.45V22.08H12.74V17.24H10.08v4.84H6V11.57L11.41,7Z"/>
-    <rect class="cls-2" x="13.84" y="13.56" width="1.71" height="2.56"/>
-    <rect class="cls-2" x="7.26" y="13.56" width="1.72" height="2.56"/>
+    <rect class="cls-2" x="17.43" y="6.08" width="1.55" height="0.77"/>
+    <rect class="cls-2" x="20.48" y="6.89" width="0.77" height="1.55" transform="translate(1.56 18.69) rotate(-49.9)"/>
+    <rect class="cls-2" x="19.7" y="22.08" width="1.55" height="0.77"/>
+    <rect class="cls-2" x="14.34" y="6.08" width="1.55" height="0.77"/>
+    <rect class="cls-2" x="24.91" y="17.22" width="0.77" height="1.55"/>
+    <rect class="cls-2" x="24.91" y="14.12" width="0.77" height="1.55"/>
+    <rect class="cls-2" x="22.85" y="8.89" width="0.77" height="1.55" transform="translate(0.88 21.22) rotate(-49.91)"/>
+    <polygon class="cls-2" points="25.27 10.86 24.77 11.45 24.91 11.57 24.91 12.57 25.68 12.57 25.68 11.21 25.27 10.86"/>
+    <rect class="cls-2" x="24.91" y="20.32" width="0.77" height="1.55"/>
+    <rect class="cls-2" x="22.79" y="22.08" width="1.55" height="0.77"/>
+    <path class="cls-2" d="M17.86,13l.5-.59L11.74,6.85h1V6.08H11.24v.35L10.68,6,4.45,11.21h0L3,12.43l.5.59,1-.8V22.85h13.7v-.77H16.91V12.22Zm-1.72-1.45V22.08H12V17.24H9.35v4.84H5.22V11.57L10.68,7Z"/>
+    <rect class="cls-2" x="13.11" y="13.56" width="1.71" height="2.56"/>
+    <rect class="cls-2" x="6.53" y="13.56" width="1.72" height="2.56"/>
   </g>
             </svg>
         </Icon>
