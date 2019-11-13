@@ -18,7 +18,7 @@ export const Carousel = () => {
         }}
         key={node.id}
       >
-        <Image fluid={node.childImageSharp.fluid} alt="" />
+        <Image fluid={node.childImageSharp.fluid} alt="Images of recent work" />
       </div>
     ))
 

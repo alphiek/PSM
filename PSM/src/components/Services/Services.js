@@ -9,7 +9,10 @@ export const Services = () => {
   const cards = servicesCopy.map((e, i) => <Card key={i} data={e} />)
   return (
     <CardContainer>
-      <CardFlex background={servicesImage}>{cards}</CardFlex>
+      <CardFlex background={servicesImage} alt='background texture'>{cards}</CardFlex>
     </CardContainer>
   )
 }
+
+
+
