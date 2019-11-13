@@ -1,0 +1,65 @@
+{
+  "name": "paphos-stone-masons",
+  "private": true,
+  "description": "Paphos Stone Masons Website",
+  "version": "0.1.0",
+  "author": "RKK Creative",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "emailjs-com": "^2.4.0",
+    "formik": "^2.0.3",
+    "gatsby": "^2.15.20",
+    "gatsby-background-image": "^0.8.12",
+    "gatsby-cli": "^2.8.9",
+    "gatsby-image": "^2.2.20",
+    "gatsby-plugin-canonical-urls": "^2.1.13",
+    "gatsby-plugin-htaccess": "^1.2.2",
+    "gatsby-plugin-manifest": "^2.2.18",
+    "gatsby-plugin-offline": "^3.0.8",
+    "gatsby-plugin-portal": "^1.0.7",
+    "gatsby-plugin-react-helmet": "^3.1.8",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-sitemap": "^2.2.19",
+    "gatsby-plugin-styled-components": "^3.1.6",
+    "gatsby-source-filesystem": "^2.1.26",
+    "gatsby-transformer-sharp": "^2.2.16",
+    "intersection-observer": "^0.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-id-swiper": "^2.4.0",
+    "react-reveal": "^1.2.2",
+    "react-spring": "^8.0.27",
+    "smooth-scroll": "^16.1.0",
+    "styled-components": "^4.3.2",
+    "swiper": "^5.2.0",
+    "typeface-roboto": "0.0.75",
+    "typeface-roboto-slab": "0.0.72",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

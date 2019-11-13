@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.paphosstonemasons.com`,
+        siteUrl: `https://paphosstonemasons.com`,
       },
     },
     {
