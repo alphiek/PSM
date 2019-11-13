@@ -8,7 +8,7 @@ export const servicesCopy = [
         p: `Bring your outdoor space to life with our landscaping services. 
         Getting the most from you garden can seem like hard work but with our 
         expert advice and guidance we can create an experience sure to wow. 
-        Locally sourced authentic materials to compliment existing structures. Contact\xa0us\xa0for\xa0more\xa0information`
+        Locally sourced authentic materials to compliment existing structures. Contact\xa0us\xa0for\xa0more\xa0information.`
     },
     {
         title: `Decorative`,

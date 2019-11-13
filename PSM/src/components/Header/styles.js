@@ -86,6 +86,7 @@ export const SideDrawerContainer = styled(a.nav)`
   }
   @media (max-width: 480px) {
     width: 80%;
+    padding-bottom: 100px;
   }
 `
 

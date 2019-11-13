@@ -27,6 +27,7 @@ module.exports = {
       options: {
         https: true,
         host: `paphosstonemasons.com`,
+        custom: `ErrorDocument 404 /404.html`
       },
     },
     `gatsby-plugin-sitemap`,

@@ -12,9 +12,9 @@ const Landing = () => {
       <BackgroundSection>
         <H1Wrapper>
           <h1>
-            Looking for quality
+            Decorative Stone Work
             <br />
-            Stone Masonry in Paphos?
+            & Landscape Masonry in Paphos
           </h1>
         </H1Wrapper>
       </BackgroundSection>

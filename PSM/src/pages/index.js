@@ -15,6 +15,11 @@ const IndexPage = () => {
         <html lang="en" />
         <title>{title}</title>
         <link rel="alternate" href={siteUrl} hrefLang="en-CY" />
+        <link rel="alternate" href={siteUrl} hrefLang="x-default" />
+        <link
+          rel="dns-prefetch"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
         <link
           rel="stylesheet"
           type="text/css"

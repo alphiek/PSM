@@ -28,14 +28,14 @@ const SignUp = ({
         )}
         <InputWrapper
           type="text"
-          placeholder="Enter name"
+          placeholder="Name"
           onChange={handleChange}
           onBlur={handleBlur}
           value={values.name || ""}
           name="name"
         />
       </label>
-      <label htmlFor="email">
+      <label htmlFor="Email">
         {errors.email && touched.email && (
           <ErrorMessage id="feedback">{errors.email}</ErrorMessage>
         )}
