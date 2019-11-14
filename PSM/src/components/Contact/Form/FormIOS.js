@@ -2,15 +2,10 @@ import React from "react"
 import { withFormik } from "formik"
 import * as Yup from "yup"
 import * as emailjs from "emailjs-com"
-import styled from 'styled-components'
-import { colors } from '../../Utils/colors'
+import styled from "styled-components"
+import { colors } from "../../Utils/colors"
 
-import {
-  InputWrapper,
-  FormWrapper,
-  ErrorMessage,
-  Submit,
-} from "./FormStyles"
+import { InputWrapper, FormWrapper, ErrorMessage, Submit } from "./FormStyles"
 
 const SignUp = ({
   values,
@@ -28,6 +23,9 @@ const SignUp = ({
         )}
         <InputWrapper
           type="text"
+          id='name'
+          aria-label='name'
+          aria-required="true"
           placeholder="Name"
           onChange={handleChange}
           onBlur={handleBlur}
@@ -41,7 +39,10 @@ const SignUp = ({
         )}
         <InputWrapper
           type="email"
-          placeholder="email"
+          id='email'
+          aria-label='email'
+          aria-required="true"
+          placeholder="Email"
           onChange={handleChange}
           onBlur={handleBlur}
           value={values.email || ""}
@@ -49,18 +50,20 @@ const SignUp = ({
           noValidate
         />
       </label>
-      <label htmlFor="messageIOS">
+      <label htmlFor="message us">
         {errors.message && touched.message && (
           <ErrorMessage id="feedback">{errors.message}</ErrorMessage>
         )}
         <MessageIOS
-          id="messageIOS"
+          id="message us"
+          aria-label='message us'
+          aria-required="true"
           onChange={handleChange}
           placeholder="What can we help with?"
           onBlur={handleBlur}
-          name="messageIOS"
+          name="message us"
           rows="4"
-          value={values.messageIOS || ""}
+          value={values.messageUs || ""}
         ></MessageIOS>
       </label>
       <Submit type="Submit">submit</Submit>
@@ -72,7 +75,7 @@ const FormIOS = withFormik({
   mapPropsToValues: () => ({
     name: "",
     email: "",
-    messageIOS: "",
+    messageUs: "",
   }),
   validationSchema: Yup.object().shape({
     name: Yup.string()
@@ -81,7 +84,7 @@ const FormIOS = withFormik({
     email: Yup.string()
       .email("Whoops, thats not a valid email address")
       .required("Email is needed"),
-    messageIOS: Yup.string()
+    messageUs: Yup.string()
       .min(
         2,
         "Please leave a message or provide telephone number to request a callback"
@@ -98,7 +101,7 @@ const FormIOS = withFormik({
     const template_params = {
       userName: values.name,
       userEmail: values.email,
-      userMessage: values.messageIOS,
+      userMessage: values.messageUs,
     }
 
     emailjs.send(service_id, template_id, template_params, user_id).then(
@@ -125,5 +128,4 @@ export const MessageIOS = styled.textarea`
   padding: 1rem;
   width: 100%;
   background-color: ${colors.tan};
-
 `

@@ -10,19 +10,19 @@ import { NavLinkStyle, ListItem, MenuDivider, Spacer, Wrapper } from "../styles"
 export const DisplayNavLinks = ({ color }) => {
   const { social } = useSiteMetaData()
 
-  const socialLinks = Object.entries(social).map((e, i) => {
-    return <SocialLinks key={i} link={e} fill={color} />
+  const socialLinks = Object.entries(social).map(e => {
+    return <SocialLinks key={e[0]} link={e} fill={color} />
   })
 
-  const navLinks = links.map((e, i) => {
+  const navLinks = links.map(e => {
     return (
       <>
-        <ListItem key={i}>
+        <ListItem key={e.name}>
           <FadeInRight>
             <GatsbyLink link={e} color={color} />
           </FadeInRight>
         </ListItem>
-        <MenuDivider />
+        <MenuDivider key={e.id} />
       </>
     )
   })

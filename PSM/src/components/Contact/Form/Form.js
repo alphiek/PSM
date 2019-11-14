@@ -27,6 +27,9 @@ const SignUp = ({
         )}
         <InputWrapper
           type="text"
+          id='name'
+          aria-label='name'
+          aria-required="true"
           placeholder="Name"
           onChange={handleChange}
           onBlur={handleBlur}
@@ -54,6 +57,8 @@ const SignUp = ({
         )}
         <Message
           id="message"
+          aria-label='message'
+          aria-required="true"
           onChange={handleChange}
           placeholder="What can we help with?"
           onBlur={handleBlur}
